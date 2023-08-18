@@ -15,7 +15,7 @@
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="34b8e4bbf4b4f0968fbdd9f5da9b5e0f0015e650"/>
   <project name="meta-toradex-security" path="layers/meta-toradex-security" remote="toradex-torizon" revision="ec01a992e809c58cb3cf2d303e07d73a6bdafa76"/>
   <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="toradex-torizon" revision="a994c254aae09d7ed52ccb55e638485271e4035b"/>
-  <project name="meta-tps_cicd" path="layers/meta-tps_cicd" remote="mab" revision="69be7dfa48a9ba3fa6d0ef793f2c254fdaa282d6" upstream="main">
+  <project name="meta-tps_cicd" path="layers/meta-tps_cicd" remote="mab" revision="0a56548f36278edaf1ed01e0c341b62bad746329" upstream="main">
     <linkfile dest="setup.sh" src="scripts/setup.sh"/>
   </project>
 </manifest>
