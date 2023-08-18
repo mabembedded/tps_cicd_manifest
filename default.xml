@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="tdx-base-pinned.xml" />
+  <include name="tdx-bsp-pinned-nxp.xml" />
+  <include name="tdx-bsp-pinned-ti.xml"/>
+  <include name="tdx-bsp-pinned-tdx.xml" />
+
+  <remote alias="repo" fetch="https://github.com/uptane" name="uptane"/>
+  <remote alias="repo" fetch="https://github.com/toradex" name="toradex-torizon"/>
+  <remote alias="repo" fetch="https://github.com/mabembedded" name="mab"/>
+
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="d398cc6ea6716afd3a3a6e88ad8fbdc89510ef23"/>
+  <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="9f7fe77932671751f3c7201d164ffbabd0cb2faf"/>
+  <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="b3b3dbc67504e8cd498d6db202ddcf5a9dd26a9d"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="34b8e4bbf4b4f0968fbdd9f5da9b5e0f0015e650"/>
+  <project name="meta-toradex-security" path="layers/meta-toradex-security" remote="toradex-torizon" revision="ec01a992e809c58cb3cf2d303e07d73a6bdafa76"/>
+  <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="toradex-torizon" revision="a994c254aae09d7ed52ccb55e638485271e4035b"/>
+  <project name="meta-tps_cicd" path="layers/meta-tps_cicd" remote="mab" revision="69be7dfa48a9ba3fa6d0ef793f2c254fdaa282d6" upstream="main">
+    <linkfile dest="setup.sh" src="scripts/setup.sh"/>
+  </project>
+</manifest>
